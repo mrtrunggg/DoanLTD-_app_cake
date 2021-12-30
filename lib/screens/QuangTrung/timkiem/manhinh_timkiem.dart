@@ -1,7 +1,8 @@
-import 'package:app_cake/screens/timkiem/components/bodytimkiem.dart';
+import 'package:app_cake/constrants.dart';
+import 'package:app_cake/screens/QuangTrung/timkiem/components/bodytimkiem.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../constrants.dart';
+
 
 
 

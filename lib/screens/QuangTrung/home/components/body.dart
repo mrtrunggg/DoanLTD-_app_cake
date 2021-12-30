@@ -1,18 +1,21 @@
 
 import 'package:app_cake/controllers/controllers.dart';
 import 'package:app_cake/model/sanpham.dart';
+import 'package:app_cake/screens/QuangTrung/home/components/banner.dart';
+import 'package:app_cake/screens/QuangTrung/home/components/category.dart';
+import 'package:app_cake/screens/QuangTrung/home/components/sanphambanchay.dart';
+import 'package:app_cake/screens/QuangTrung/home/components/sanphammoi.dart';
+import 'package:app_cake/screens/QuangTrung/home/components/sanphamnoibat.dart';
 
-import 'package:app_cake/screens/home/components/banner.dart';
-import 'package:app_cake/screens/home/components/category.dart';
-import 'package:app_cake/screens/home/components/sanphambanchay.dart';
-import 'package:app_cake/screens/home/components/sanphammoi.dart';
-import 'package:app_cake/screens/home/components/sanphamnoibat.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart';
 
-import '../../../constrants.dart';
+import '../../../../constrants.dart';
+
+
 
 class Body extends StatefulWidget {
   Body({Key? key}) : super(key: key);

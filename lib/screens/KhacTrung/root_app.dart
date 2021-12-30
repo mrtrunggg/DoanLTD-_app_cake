@@ -1,8 +1,8 @@
 import 'package:app_cake/screens/KhacTrung/constrant.dart';
 import 'package:app_cake/screens/KhacTrung/home_notification.dart';
 import 'package:app_cake/screens/KhacTrung/home_search.dart';
-import 'package:app_cake/screens/home/home_screen.dart';
-import 'package:app_cake/screens/timkiem/manhinh_timkiem.dart';
+import 'package:app_cake/screens/QuangTrung/home/home_screen.dart';
+import 'package:app_cake/screens/QuangTrung/timkiem/manhinh_timkiem.dart';
 import 'package:flutter/material.dart';
 
 import 'home_cart.dart';

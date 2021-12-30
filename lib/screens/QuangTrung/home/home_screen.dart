@@ -1,11 +1,12 @@
 
-import 'package:app_cake/screens/home/components/body.dart';
-import 'package:app_cake/screens/timkiem/manhinh_timkiem.dart';
+import 'package:app_cake/screens/QuangTrung/home/components/body.dart';
+import 'package:app_cake/screens/QuangTrung/timkiem/manhinh_timkiem.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
-import '../../constrants.dart';
+import '../../../constrants.dart';
+
 
 
 

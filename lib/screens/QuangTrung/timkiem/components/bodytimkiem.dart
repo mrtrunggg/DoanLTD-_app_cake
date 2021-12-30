@@ -6,7 +6,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 
-import '../../../constrants.dart';
+import '../../../../constrants.dart';
+
 
 class Bodytimkiem extends StatefulWidget {
   Bodytimkiem({Key? key}) : super(key: key);

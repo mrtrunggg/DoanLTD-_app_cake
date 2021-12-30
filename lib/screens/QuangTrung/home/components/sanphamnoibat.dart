@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../../../constrants.dart';
+import '../../../../constrants.dart';
 
-class SanPhamMoi extends StatelessWidget {
-  const SanPhamMoi({
+
+class sanPhamNoiBat extends StatelessWidget {
+  const sanPhamNoiBat({
     Key? key,
   }) : super(key: key);
 
@@ -20,7 +21,7 @@ class SanPhamMoi extends StatelessWidget {
         color: Colors.brown.shade100,
         child: Padding(            
           padding: EdgeInsets.only(top: kDefaultPaddin/2, left: kDefaultPaddin),
-          child: Text("SẢN PHẨM MỚI",
+          child: Text("SẢN PHẨM NỔI BẬT",
           style: TextStyle(
             fontStyle: FontStyle.italic,
             fontWeight: FontWeight.bold,

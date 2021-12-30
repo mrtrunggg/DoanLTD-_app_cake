@@ -1,24 +1,26 @@
-import 'package:app_cake/screens/CTSP/components/bodyctsp.dart';
+import 'package:app_cake/constrants.dart';
+import 'package:app_cake/screens/QuangTrung/trangloaisanpham/components/body.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../constrants.dart';
 
 
 
-class manhinhctsp extends StatefulWidget {
-  const manhinhctsp({Key? key}) : super(key: key);
+
+class manhinhloaisanpham extends StatefulWidget {
+  const manhinhloaisanpham({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => manhinhctspState();
+  State<StatefulWidget> createState() => manhinhloaisanphamState();
 }
 
 
-class manhinhctspState extends State<manhinhctsp>{
+class manhinhloaisanphamState extends State<manhinhloaisanpham>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: newMethod(),
-      body: Bodyctsp(),
+      body: Bodyloaisanpham(),
     );
   }
 
@@ -27,7 +29,7 @@ class manhinhctspState extends State<manhinhctsp>{
       backgroundColor: Colors.brown.shade100,
       
       elevation: 0,
-      title:  const Text("Chi tiết sản phẩm",       
+      title:  const Text("Trang loại sản phẩm",       
         style: TextStyle(
         color: Colors.black,
         fontWeight: FontWeight.bold,

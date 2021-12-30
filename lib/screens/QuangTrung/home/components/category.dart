@@ -1,4 +1,5 @@
-import 'package:app_cake/screens/trangloaisanpham/manhinh_trangloaisanpham.dart';
+
+import 'package:app_cake/screens/QuangTrung/trangloaisanpham/manhinh_trangloaisanpham.dart';
 import 'package:flutter/material.dart';
 
 

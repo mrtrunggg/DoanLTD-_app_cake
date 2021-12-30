@@ -1,5 +1,6 @@
 
 import 'package:app_cake/screens/KhacTrung/home_pay.dart';
+import 'package:app_cake/screens/KhacTrung/root_app.dart';
 import 'package:flutter/material.dart';
 // ignore: camel_case_types
 class dangnhap  extends StatefulWidget {
@@ -135,7 +136,7 @@ class _dangnhap extends State<dangnhap > {
              Navigator.push(
              context,
              MaterialPageRoute(
-             builder: (_) => const thanhtoan(),),);
+             builder: (_) => const trangchinh(),),);
            },
            child: Container(
              width: 350,

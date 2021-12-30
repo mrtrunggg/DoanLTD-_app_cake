@@ -29,26 +29,23 @@ class BodyctspState extends State<Bodyctsp>{
         tenchitietsanpham(),
         Image.asset("assets/images/bag_1.png"),
             
-        Padding(
-          padding: EdgeInsets.only(right: 500),
-          child: Text("Tên sản phẩm: Bánh mì",
+        
+         
+          Text("Tên sản phẩm: Bánh mì",
             style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.bold,
             fontSize: 20
             ),      
           ),
-        ),
         SizedBox(height: kDefaultPaddin/2,),      
-        Padding(
-          padding: EdgeInsets.only(right: 570),    
-          child: Text("Giá tiền: 2.500đ",
+    
+          Text("Giá tiền: 2.500đ",
           style: TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.bold,
           fontSize: 20),
-          )
-        ),
+          ),
          
         SizedBox(height: kDefaultPaddin,),
 

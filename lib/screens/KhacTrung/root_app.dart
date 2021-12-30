@@ -1,6 +1,8 @@
 import 'package:app_cake/screens/KhacTrung/constrant.dart';
 import 'package:app_cake/screens/KhacTrung/home_notification.dart';
 import 'package:app_cake/screens/KhacTrung/home_search.dart';
+import 'package:app_cake/screens/home/home_screen.dart';
+import 'package:app_cake/screens/timkiem/manhinh_timkiem.dart';
 import 'package:flutter/material.dart';
 
 import 'home_cart.dart';
@@ -28,13 +30,9 @@ AppBar ? appbar;
   getBody() {
     return IndexedStack(
       index: activeTab,
-      children: const [
-        Center(
-          child: Text("Home",
-          style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
-          ),
-        ),
-        timkiem(),
+      children: const [       
+        ScreenHome(),
+        manhinhtiemkiem(),
         thongbao(),
         cart(),
       ],

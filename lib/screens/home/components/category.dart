@@ -1,3 +1,4 @@
+import 'package:app_cake/screens/trangloaisanpham/manhinh_trangloaisanpham.dart';
 import 'package:flutter/material.dart';
 
 
@@ -45,7 +46,12 @@ class category extends StatelessWidget {
           child: Text("Bánh kem",
           style: TextStyle(color: Colors.white),
           ),
-          onPressed: () {}
+          onPressed: () {
+            Navigator.push(
+             context,
+             MaterialPageRoute(
+             builder: (_) => const manhinhloaisanpham(),),);
+          }
         ),          
       ],
 

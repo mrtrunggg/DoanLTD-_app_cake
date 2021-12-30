@@ -1,6 +1,7 @@
 import 'package:app_cake/constrants.dart';
 
 import 'package:app_cake/screens/CTSP/manhinh_ctsp.dart';
+import 'package:app_cake/screens/KhacTrung/home_login.dart';
 import 'package:app_cake/screens/KhacTrung/root_app.dart';
 import 'package:app_cake/screens/home/home_screen.dart';
 import 'package:app_cake/screens/timkiem/manhinh_timkiem.dart';
@@ -29,7 +30,8 @@ class MyApp extends StatelessWidget {
 
       //home: ScreenHome(),
       //home: trangchinh(),
-      home: manhinhloaisanpham()
+      //home: manhinhloaisanpham()
+      home: dangnhap(),
     );
   }
 }

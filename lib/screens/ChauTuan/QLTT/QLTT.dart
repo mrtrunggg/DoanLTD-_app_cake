@@ -1,10 +1,11 @@
 import 'package:app_cake/constrants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:app_cake/screens/QuangTrung/home/components/body.dart';
 import 'package:get/get.dart';
 
 import 'components/body.dart';
+
+
 class QLTT extends StatefulWidget {
   QLTT({Key? key}) : super(key: key);
 
@@ -23,7 +24,7 @@ class _QLTTState extends State<QLTT> {
 
   AppBar newMethod() {
     return AppBar(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.brown.shade100,
       elevation: 0,
       centerTitle: true,
       title: Text('Thông tin cá nhân'),
@@ -33,17 +34,12 @@ class _QLTTState extends State<QLTT> {
         },
         icon: Icon(Icons.arrow_back),
       ),
-      actions: <Widget>[
-        IconButton(
-          icon: Icon(
-            Icons.check,
-            color: Colors.white,
-          ),
-          onPressed: () {
-            // do something
-          },
-        )
-      ],
+     actions: [
+       IconButton(
+        onPressed: () {},
+        icon: Icon(Icons.check),
+      ),
+     ],
     );
   }
 }

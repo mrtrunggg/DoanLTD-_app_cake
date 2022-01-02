@@ -1,10 +1,8 @@
-import 'package:app_cake/screens/ChauTuan/components/email.dart';
-import 'package:app_cake/screens/ChauTuan/components/sdt.dart';
-import 'package:app_cake/screens/ChauTuan//components/thaydoimatkhau.dart';
-import 'package:app_cake/screens/ChauTuan/components/thongtincanhan.dart';
+import 'package:app_cake/screens/ChauTuan/QLTT/QLTT.dart';
+import 'package:app_cake/screens/KhacTrung/home_login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
+import '../../../../constrants.dart';
 class body extends StatefulWidget {
   body({Key? key}) : super(key: key);
 
@@ -18,57 +16,140 @@ class _bodyState extends State<body> {
     return ListView(
       children: <Widget>[
         Container(
-          color: Colors.red,
-          width: double.infinity,
-          height: 300, 
-          child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          
-          children: <Widget>[
-            SvgPicture.asset('assets/icons/userlogin.svg',width: 100,height: 100,),
-            TextButton(
-              onPressed: () {}, 
-              child: Text('cập nhật ảnh',style: TextStyle(color: Colors.black),),
-              
-          ),
-            // Image.asset('assets/icons/userlogin.svg'),
-          ],
-        )),
-        
-        ListTile(
-          leading: Icon(Icons.account_circle),
-          title: TextButton(
-              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=> ttcn()));}, 
-              child: Text('Châu Tuấn',style: TextStyle(color: Colors.grey),),
-          ),
-          
-        ),
-        ListTile(
-          leading: Icon(Icons.email),
-          title: TextButton(
-              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=> email()));}, 
-              child: Text('abc@gmail.com',style: TextStyle(color: Colors.grey),),
-          ),
-        ),
-        ListTile(
-          leading: Icon(Icons.phone_iphone),
-          title: TextButton(
-              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=> sdt()));}, 
-              child: Text('0303234567',style: TextStyle(color: Colors.grey),),
-              
-          ),
-        ),
-        Divider(color: Colors.grey,indent: 5.0,),
-        ListTile(
-          leading: Icon(Icons.vpn_key),
-          title: TextButton(
-              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=> matkhau()));}, 
-              child: Text('Thay đổi mật khẩu',style: TextStyle(color: Colors.grey),),
-          ),
+              padding: const EdgeInsets.only(left:0),
+                child: GestureDetector(
+                  onTap: () {
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                  builder: (_) => QLTT(),),);
+                },
+                child: Container(
+                  height: 60,
+                  // ignore: prefer_const_constructors
+                  child: Row(
+                    children: [
+                      SizedBox(width: 10,),
+                      Icon(Icons.account_circle,size: 50,),
+                      SizedBox(width: 20,),
+                      Container(
+                        height: 30,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const[
+                            Text("Thông tin cá nhân", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.black),),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
-
-      ]
+            Divider(color: Colors.grey),
+            Container(
+              padding: const EdgeInsets.only(left:0),
+                child: GestureDetector(
+                  onTap: () {
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                  builder: (_) => QLTT(),),);
+                },
+                child: Container(
+                  height: 60,
+                  // ignore: prefer_const_constructors
+                  child: Row(
+                    children: [
+                      SizedBox(width: 10,),
+                      Icon(Icons.local_shipping,size: 50,),
+                      SizedBox(width: 20,),
+                      Container(
+                        height: 30,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const[
+                            Text("Đơn hàng", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.black),),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Divider(color: Colors.grey),
+            Container(
+              padding: const EdgeInsets.only(left:0),
+                child: GestureDetector(
+                  onTap: () {
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                  builder: (_) => QLTT(),),);
+                },
+                child: Container(
+                  height: 60,
+                  // ignore: prefer_const_constructors
+                  child: Row(
+                    children: [
+                      SizedBox(width: 10,),
+                      Icon(Icons.settings,size: 50),
+                      SizedBox(width: 20,),
+                      Container(
+                        height: 50,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const[
+                            SizedBox(height: 10,),
+                            Text("Cài đặt", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.black),),
+                          ],
+                        ),
+                        
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Divider(color: Colors.grey),
+            SizedBox(height: 300,),
+            GestureDetector(
+                    onTap: () {
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                    builder: (_) => dangnhap(),),);
+                  },
+                  child: Container(
+                    height: 60,
+                    // ignore: prefer_const_constructors
+                    color: Colors.black,
+                    child: Row(
+                      children: [
+                        SizedBox(width: 20,),
+                        Container(
+                          
+                          height: 50,
+                          
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const[
+                              SizedBox(height: 10,),
+                              Text("Đăng xuất", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24,color: Colors.white),),
+                            ],
+                            
+                          ),
+                          
+                        ),
+                        SizedBox(width: 230,),
+                        Icon(Icons.logout,color: Colors.white,size: 36,)
+                      ],
+                    ),
+                  ),
+                ),
+              
+      ],
     );
   }
 }

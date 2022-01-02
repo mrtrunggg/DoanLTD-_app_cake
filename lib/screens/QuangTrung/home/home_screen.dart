@@ -1,5 +1,5 @@
 
-import 'package:app_cake/screens/ChauTuan/QLTT.dart';
+import 'package:app_cake/screens/ChauTuan/QLTK.dart';
 import 'package:app_cake/screens/QuangTrung/home/components/body.dart';
 import 'package:app_cake/screens/QuangTrung/timkiem/manhinh_timkiem.dart';
 import 'package:flutter/cupertino.dart';
@@ -54,7 +54,7 @@ class ScreenHomeState extends State<ScreenHome>{
       IconButton(onPressed: () {
         Navigator.push(
          context,
-         MaterialPageRoute(builder: (context) => QLTT()),
+         MaterialPageRoute(builder: (context) => QLTK()),
         );
       },
         icon: const Icon(Icons.account_circle,

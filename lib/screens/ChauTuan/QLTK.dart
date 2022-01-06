@@ -30,16 +30,15 @@ class _QLTKState extends State<QLTK> {
   }
   AppBar newMethod() {
     return AppBar(
-      
       backgroundColor: Colors.brown.shade100,
       elevation: 0,
       centerTitle: true,
-      title: Text('Tài khoản',style: TextStyle(fontSize: 28,color: Colors.black),),
+      title: Text('Tài khoản',),
       leading: IconButton(
         onPressed: () {
           Navigator.pop(context);
         },
-        icon: Icon(Icons.arrow_back,color: Colors.black),
+        icon: Icon(Icons.arrow_back,color: Colors.white),
       ),
      
     );

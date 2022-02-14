@@ -46,7 +46,6 @@ class _thanhtoan extends State<thanhtoan > {
           const Padding(
             padding: EdgeInsets.only(left: 20),
               child:  TextField(
-                obscureText: true,
                   decoration: InputDecoration(
                     labelText: 'Chọn địa chỉ nhận hàng của bạn..',
                   ),

@@ -1,5 +1,10 @@
 
-import 'package:app_cake/screens/QuangTrung/trangloaisanpham/manhinh_trangloaisanpham.dart';
+
+import 'package:app_cake/screens/QuangTrung/trangloaisanphamBK/manhinh_trangloaisanpham.dart';
+import 'package:app_cake/screens/QuangTrung/trangloaisanphamBM/manhinh_trangloaisanpham.dart';
+import 'package:app_cake/screens/QuangTrung/trangloaisanphamBMT/manhinh_trangloaisanpham.dart';
+import 'package:app_cake/screens/QuangTrung/trangloaisanphamBN/manhinh_trangloaisanpham.dart';
+
 import 'package:flutter/material.dart';
 
 
@@ -20,7 +25,12 @@ class category extends StatelessWidget {
           child: Text("Bánh ngọt",
           style: TextStyle(color: Colors.white),
           ),
-          onPressed: () {}
+          onPressed: () {
+            Navigator.push(
+             context,
+             MaterialPageRoute(
+             builder: (_) => const manhinhloaisanphamBN(),),);
+          }
         ),
         TextButton(
           style: ButtonStyle(
@@ -29,7 +39,12 @@ class category extends StatelessWidget {
           child: Text("Bánh mì",
           style: TextStyle(color: Colors.white),
           ),
-          onPressed: () {}
+          onPressed: () {
+            Navigator.push(
+             context,
+             MaterialPageRoute(
+             builder: (_) => const manhinhloaisanphamBM(),),);
+          }
         ),
         TextButton(
           style: ButtonStyle(
@@ -38,7 +53,12 @@ class category extends StatelessWidget {
           child: Text("Bánh mì mặn",
           style: TextStyle(color: Colors.white),
           ),
-          onPressed: () {}
+          onPressed: () {
+             Navigator.push(
+             context,
+             MaterialPageRoute(
+             builder: (_) => const manhinhloaisanphamBMT(),),);
+          }
         ),
         TextButton(
           style: ButtonStyle(

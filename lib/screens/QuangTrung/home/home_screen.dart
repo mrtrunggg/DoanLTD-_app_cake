@@ -1,6 +1,9 @@
 
+
+
 import 'package:app_cake/screens/ChauTuan/QLTK.dart';
 import 'package:app_cake/screens/QuangTrung/home/components/body.dart';
+
 import 'package:app_cake/screens/QuangTrung/timkiem/manhinh_timkiem.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -24,8 +27,8 @@ class ScreenHomeState extends State<ScreenHome>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: newMethod(),
-      body: Body(),
-      
+      body: bodyHome(),
+    
     );
   }
 

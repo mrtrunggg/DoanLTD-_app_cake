@@ -1,100 +1,72 @@
 
-import 'package:http/http.dart' as http;
-import 'dart:async';
-import 'dart:convert';
-import 'global.dart';
-import 'dart:core';
-
-
 class sanpham {
-  int userId;
-  int id;
-  String title;
-  String body;
+    late int id;
+    late String sanphamName;
+    late int loaisanphamId;
+    late String thuonghieu;
+    late int dongia;
+    late int soluong;
+    late String mota;
+    late String kichthuoc;
+    late String hinhanh;
+    late int trangthai;
+    late dynamic createdAt;
+    late dynamic updatedAt;
+    late dynamic deletedAt;
 
-  sanpham({required this.userId,required this.id,required this.title,required this.body});
+  sanpham({
+    required this.id,
+    required this.sanphamName,
+    required this.loaisanphamId,
+    required this.thuonghieu,
+    required this.dongia,
+    required this.soluong,
+    required this.mota,
+    required this.kichthuoc,
+    required this.hinhanh,
+    required this.trangthai,
+  });
 
-  factory sanpham.fromJson(Map<String, dynamic> json) {
-    return sanpham(
-    userId : json['userId'],
-    id : json['id'],
-    title : json['title'],
-    body : json['body'],
-    );
+ sanpham.fromJson(Map<String, dynamic> json) {
+    id = json['id'];
+    sanphamName = json['sanpham_name'];
+    loaisanphamId = json['loaisanpham_id'];
+    thuonghieu = json['thuonghieu'];
+    dongia = json['dongia'];
+    soluong = json['soluong'];
+    mota = json['mota'];
+    kichthuoc = json['kichthuoc'];
+    hinhanh = json['hinhanh'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['userId'] = this.userId;
     data['id'] = this.id;
-    data['title'] = this.title;
-    data['body'] = this.body;
+    data['sanpham_name'] = this.sanphamName;
+    data['loaisanpham_id'] = this.loaisanphamId;
+    data['thuonghieu'] = this.thuonghieu;
+    data['dongia'] = this.dongia;
+    data['soluong'] = this.soluong;
+    data['mota'] = this.mota;
+    data['kichthuoc'] = this.kichthuoc;
+    data['hinhanh'] = this.hinhanh;
+    data['trangthai'] = this.trangthai;
     return data;
   }
 }
 
 
-
-
-
-
-
-/*class sanpham {
-  int idSanPham;
-  String tenSanPham;
-  String dongiaSanPham;
-  String soluongSanPham;
-  String motaSanPham;
-  String kichthuocSanPham;
-  String hinhanhSanPham;
-  Null createdAt;
-  Null updatedAt;
-
-  sanpham(
-      {
-      required this.idSanPham,
-      required this.tenSanPham,
-      required this.dongiaSanPham,
-      required this.soluongSanPham,
-      required this.motaSanPham,
-      required this.kichthuocSanPham,
-      required this.hinhanhSanPham,
-      required this.createdAt,
-      required this.updatedAt
-      }
-  );
-
-  factory sanpham.fromJson(Map<String, dynamic> json){
-    return sanpham(
-    idSanPham : json['id_sanPham'],
-    tenSanPham : json['ten_sanPham'],
-    dongiaSanPham : json['dongia_sanPham'],
-    soluongSanPham : json['soluong_sanPham'],
-    motaSanPham : json['mota_sanPham'],
-    kichthuocSanPham : json['kichthuoc_sanPham'],
-    hinhanhSanPham : json['hinhanh_sanPham'],
-    createdAt : json['created_at'],
-    updatedAt : json['updated_at'],
-    );
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id_sanPham'] = this.idSanPham;
-    data['ten_sanPham'] = this.tenSanPham;
-    data['dongia_sanPham'] = this.dongiaSanPham;
-    data['soluong_sanPham'] = this.soluongSanPham;
-    data['mota_sanPham'] = this.motaSanPham;
-    data['kichthuoc_sanPham'] = this.kichthuocSanPham;
-    data['hinhanh_sanPham'] = this.hinhanhSanPham;
-    data['created_at'] = this.createdAt;
-    data['updated_at'] = this.updatedAt;
-    return data;
-  }
-
-}*/
-
-
-  
-
-
+// factory sanpham.fromJson(Map<String, dynamic> json) {
+  //   return sanpham(
+  //     id: json['id'],
+  //     sanphamName: json['sanphamName'],
+  //     loaisanphamId: json['loaisanphamId'],
+  //     thuonghieu: json['thuonghieu'],
+  //     dongia: json['dongia'],
+  //     soluong: json['soluong'],
+  //     mota: json['mota'],
+  //     kichthuoc: json['kichthuoc'],
+  //     hinhanh: json['hinhanh'],
+  //     trangthai: json['trangthai'],
+  //   );
+  // }

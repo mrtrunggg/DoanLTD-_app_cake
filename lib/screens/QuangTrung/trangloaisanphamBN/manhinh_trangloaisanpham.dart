@@ -1,5 +1,7 @@
 import 'package:app_cake/constrants.dart';
-import 'package:app_cake/screens/QuangTrung/trangloaisanpham/components/body.dart';
+
+import 'package:app_cake/screens/QuangTrung/trangloaisanphamBK/components/body.dart';
+import 'package:app_cake/screens/QuangTrung/trangloaisanphamBN/components/body.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -7,20 +9,20 @@ import 'package:flutter/material.dart';
 
 
 
-class manhinhloaisanpham extends StatefulWidget {
-  const manhinhloaisanpham({Key? key}) : super(key: key);
+class manhinhloaisanphamBN extends StatefulWidget {
+  const manhinhloaisanphamBN({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => manhinhloaisanphamState();
+  State<StatefulWidget> createState() => manhinhloaisanphamBNState();
 }
 
 
-class manhinhloaisanphamState extends State<manhinhloaisanpham>{
+class manhinhloaisanphamBNState extends State<manhinhloaisanphamBN>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: newMethod(),
-      body: Bodyloaisanpham(),
+      body: BodyloaisanphamBN(),
     );
   }
 

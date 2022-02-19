@@ -1,4 +1,5 @@
 
+
 import 'package:app_cake/model/sanpham.dart';
 import 'package:app_cake/screens/QuangTrung/home/components/banner.dart';
 import 'package:app_cake/screens/QuangTrung/home/components/category.dart';
@@ -85,52 +86,3 @@ void initState() {
 }
      
   
-// class MyHomePageproduct extends StatelessWidget {
-//   const MyHomePageproduct({Key? key, required this.title}) : super(key: key);
-
-//   final String title;
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text(title),
-//       ),
-//       body: FutureBuilder<List<sanpham>>(
-//         future: fetchsanpham(http.Client()),
-//         builder: (context, snapshot) {
-//           if (snapshot.hasError) {
-//             return const Center(
-//               child: Text('An error has occurred!'),
-//             );
-//           } else if (snapshot.hasData) {
-//             return sanphamList(sanphams: snapshot.data!);
-//           } else {
-//             return const Center(
-//               child: CircularProgressIndicator(),
-//             );
-//           }
-//         },
-//       ),
-//     );
-//   }
-// }
-
-// class sanphamList extends StatelessWidget {
-//   const sanphamList({Key? key, required this.sanphams}) : super(key: key);
-
-//   final List<sanpham> sanphams;
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return GridView.builder(
-//       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-//         crossAxisCount: 2,
-//       ),
-//       itemCount: sanphams.length,
-//       itemBuilder: (context, index) {
-//         return Text(sanphams[index].mota);
-//       },
-//     );
-//   }
-// }

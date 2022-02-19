@@ -56,17 +56,3 @@ class sanpham {
 }
 
 
-// factory sanpham.fromJson(Map<String, dynamic> json) {
-  //   return sanpham(
-  //     id: json['id'],
-  //     sanphamName: json['sanphamName'],
-  //     loaisanphamId: json['loaisanphamId'],
-  //     thuonghieu: json['thuonghieu'],
-  //     dongia: json['dongia'],
-  //     soluong: json['soluong'],
-  //     mota: json['mota'],
-  //     kichthuoc: json['kichthuoc'],
-  //     hinhanh: json['hinhanh'],
-  //     trangthai: json['trangthai'],
-  //   );
-  // }

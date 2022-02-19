@@ -225,7 +225,7 @@ class _trangyeuthich extends State<trangyeuthich > {
                                       const SizedBox( width: 10,),
                                       Text("THÊM VÀO GIỎ HÀNG",style: TextStyle( fontSize: 14,fontWeight: FontWeight.bold)),
                                       const SizedBox( width: 10,),
-                                      Icon(Icons.account_balance)
+                                      Icon(Icons.local_grocery_store)
                                     ],
                                   ),
                                 ),
@@ -415,7 +415,7 @@ class _trangyeuthich extends State<trangyeuthich > {
                                       const SizedBox( width: 10,),
                                       Text("THÊM VÀO GIỎ HÀNG",style: TextStyle( fontSize: 14,fontWeight: FontWeight.bold)),
                                       const SizedBox( width: 10,),
-                                      Icon(Icons.account_balance)
+                                      Icon(Icons.local_grocery_store)
                                     ],
                                   ),
                                 ),
@@ -437,7 +437,7 @@ class _trangyeuthich extends State<trangyeuthich > {
                                       const SizedBox( width: 10,),
                                       Text("LƯU",style: TextStyle( fontSize: 14,fontWeight: FontWeight.bold)),
                                       const SizedBox( width: 10,),
-                                      Icon(Icons.account_balance)
+                                      Icon(Icons.favorite_border)
                                     ],
                                   ),
                                 ),

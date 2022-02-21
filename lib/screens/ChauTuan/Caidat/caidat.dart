@@ -1,10 +1,8 @@
 import 'package:app_cake/constrants.dart';
+import 'package:app_cake/screens/ChauTuan/components/CaidatComponent/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-
-import 'components/body.dart';
-
 
 class Caidat extends StatefulWidget {
   Caidat({Key? key}) : super(key: key);
@@ -34,7 +32,6 @@ class _CaidatState extends State<Caidat> {
         },
         icon: Icon(Icons.arrow_back),
       ),
-     
     );
   }
 }

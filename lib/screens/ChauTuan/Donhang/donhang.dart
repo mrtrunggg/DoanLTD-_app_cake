@@ -1,17 +1,17 @@
 import 'package:app_cake/constrants.dart';
-import 'package:app_cake/screens/ChauTuan/components/QuanlithongtinComponent/body.dart';
+import 'package:app_cake/screens/ChauTuan/components/DonhangComponent/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
-class QLTT extends StatefulWidget {
-  QLTT({Key? key}) : super(key: key);
+class Donhang extends StatefulWidget {
+  Donhang({Key? key}) : super(key: key);
 
   @override
-  _QLTTState createState() => _QLTTState();
+  _DonhangState createState() => _DonhangState();
 }
 
-class _QLTTState extends State<QLTT> {
+class _DonhangState extends State<Donhang> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,19 +25,13 @@ class _QLTTState extends State<QLTT> {
       backgroundColor: Colors.brown.shade100,
       elevation: 0,
       centerTitle: true,
-      title: Text('Thông tin cá nhân'),
+      title: Text('Đơn hàng'),
       leading: IconButton(
         onPressed: () {
           Navigator.pop(context);
         },
         icon: Icon(Icons.arrow_back),
       ),
-      actions: [
-        IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.check),
-        ),
-      ],
     );
   }
 }

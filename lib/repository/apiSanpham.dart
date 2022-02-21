@@ -118,3 +118,25 @@ Future<List<sanpham>> getDMSanphamBN(context) async {
   }
   return sanphams;
 }
+
+Future<List<sanpham>> getSanphambanchay(context) async {
+  List<sanpham> sanphams = [];
+
+  try{
+    final response = await http.get(
+      Uri.parse('http://10.0.2.2:8000/api/sanphambanchay'),
+      headers: {
+        HttpHeaders.contentTypeHeader:"application/json",
+      },
+    );
+    if(response.statusCode==200){
+
+      final item = json.decode(response.body);
+      sanphams=(item as List).map((prod)=>sanpham.fromJson(prod)).toList();
+      
+    }
+  }catch(e){
+    rethrow;
+  }
+  return sanphams;
+}

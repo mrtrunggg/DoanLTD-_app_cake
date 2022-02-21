@@ -28,7 +28,10 @@ class BodyctspState extends State<Bodyctsp>{
       children: <Widget> [     
         SizedBox(height: kDefaultPaddin/2,),    
         tenchitietsanpham(),
-        Image.asset("assets/images/bag_1.png"),
+        Image.asset("assets/images/bm1.jpg",
+        width: 450,
+        height: 300,
+        ),
             
         
          

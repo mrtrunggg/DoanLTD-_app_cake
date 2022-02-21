@@ -72,7 +72,25 @@ void initState() {
           ),      
         ),
         SizedBox(height: kDefaultPaddin/2,),
+        
+
         sanphammoi(),
+
+        Container(     
+                color: Colors.brown.shade100,
+                child: Padding(            
+                  padding: EdgeInsets.only(top: kDefaultPaddin/2, left: kDefaultPaddin),
+                  child: Text("SẢN PHẨM BÁN CHẠY",
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                      ),
+                    ),
+                  ),      
+                ),
+        SizedBox(height: kDefaultPaddin/2,),
+        sanphambanchay(),
         // SizedBox(height: kDefaultPaddin/2,),
         // sanPhamNoiBat(),
         // SizedBox(height: kDefaultPaddin/2,),

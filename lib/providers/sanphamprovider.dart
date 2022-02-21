@@ -1,4 +1,5 @@
 
+import 'package:app_cake/screens/QuangTrung/home/components/sanphambanchay.dart';
 import 'package:flutter/material.dart';
 import 'package:app_cake/model/sanpham.dart';
 import 'package:app_cake/repository/apiSanpham.dart';
@@ -15,6 +16,9 @@ class SanphamProvider with ChangeNotifier{
    List<sanpham> danhmucsanphamBMs = [];
 
    List<sanpham> danhmucsanphamBNs = [];
+
+   List<sanpham> sanphambanchays = [];
+   
 
   bool loading = false;
 
@@ -58,5 +62,14 @@ danhmucsanphamBN(context) async{
     loading = false;
     notifyListeners();
   } 
+
+  sanphambanchay(context) async{
+    loading = true;
+
+    sanphambanchays = await getSanphambanchay(context);
+    loading = false;
+    notifyListeners();
+  } 
+
 
 }

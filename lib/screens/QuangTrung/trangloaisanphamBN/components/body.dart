@@ -39,7 +39,7 @@ Container(
     children: <Widget>[     
       const Padding(            
           padding: EdgeInsets.only(left: kDefaultPaddin),
-          child: Text("Bánh kem",
+          child: Text("Bánh ngọt",
           style: TextStyle(
             fontStyle: FontStyle.italic,
             fontWeight: FontWeight.bold,

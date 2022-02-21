@@ -1,5 +1,6 @@
 
 import 'package:app_cake/providers/sanphamprovider.dart';
+import 'package:app_cake/screens/QuangTrung/CTSP/manhinh_ctsp.dart';
 
 import 'package:app_cake/screens/QuangTrung/trangloaisanphamBK/manhinh_trangloaisanpham.dart';
 import 'package:flutter/material.dart';
@@ -75,7 +76,7 @@ class sanphamthongthuongshow extends StatelessWidget {
             Navigator.push(
              context,
              MaterialPageRoute(
-             builder: (_) => const manhinhloaisanpham(),),);
+             builder: (_) => const manhinhctsp(),),);
     },
 
     child: Column(

@@ -70,7 +70,12 @@ class dmspshow extends StatelessWidget {
   @override
   Widget build(BuildContext context) { 
     return GestureDetector(
-      //onTap: press,  
+      onTap:() {
+            Navigator.push(
+             context,
+             MaterialPageRoute(
+             builder: (_) => const manhinhctsp(),),);
+    },  
       
           
           child: Row(        

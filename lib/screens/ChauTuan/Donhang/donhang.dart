@@ -1,17 +1,17 @@
 import 'package:app_cake/constrants.dart';
-import 'package:app_cake/screens/ChauTuan/components/CaidatComponent/body.dart';
+import 'package:app_cake/screens/ChauTuan/components/DonhangComponent/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
-class Caidat extends StatefulWidget {
-  Caidat({Key? key}) : super(key: key);
+class Donhang extends StatefulWidget {
+  Donhang({Key? key}) : super(key: key);
 
   @override
-  _CaidatState createState() => _CaidatState();
+  _DonhangState createState() => _DonhangState();
 }
 
-class _CaidatState extends State<Caidat> {
+class _DonhangState extends State<Donhang> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +25,7 @@ class _CaidatState extends State<Caidat> {
       backgroundColor: Colors.brown.shade100,
       elevation: 0,
       centerTitle: true,
-      title: Text('Cài đặt'),
+      title: Text('Đơn hàng'),
       leading: IconButton(
         onPressed: () {
           Navigator.pop(context);

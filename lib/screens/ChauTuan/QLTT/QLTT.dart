@@ -1,10 +1,8 @@
 import 'package:app_cake/constrants.dart';
+import 'package:app_cake/screens/ChauTuan/components/QuanlithongtinComponent/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-
-import 'components/body.dart';
-
 
 class QLTT extends StatefulWidget {
   QLTT({Key? key}) : super(key: key);
@@ -34,12 +32,12 @@ class _QLTTState extends State<QLTT> {
         },
         icon: Icon(Icons.arrow_back),
       ),
-     actions: [
-       IconButton(
-        onPressed: () {},
-        icon: Icon(Icons.check),
-      ),
-     ],
+      actions: [
+        IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.check),
+        ),
+      ],
     );
   }
 }
